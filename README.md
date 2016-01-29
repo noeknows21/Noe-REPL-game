@@ -1,4 +1,3 @@
-# repl-game
-repl game
+# Noe REPL game
 
-great game!!!
+Tavern crawl - a repl game
