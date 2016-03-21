@@ -137,7 +137,8 @@ score achievable). Props on thinking outside the box. GAME OVER!"
 else
   $player_name = initials
   $player_name = $player_name.upcase
-  puts "Sorry but I do not recognize you. You will henceforth be known as #{$player_name}."
+  puts "Sorry but I do not recognize you. You are not part of Wyncode Cohort 8."
+  puts "You will henceforth be known as #{$player_name}."
 end
 
 #initializing variables
@@ -223,9 +224,9 @@ end
 def cricket_loop
   puts "You: 'Sup Cricket. How ya been?!'"
   puts "Cricket: 'Nothin much just shootin the dice you know me haha.'"
-  puts "You: 'Damn Cricket you gotta stop blowing your money on that shit, you
+  puts "You: 'Damn Cricket you gotta stop blowing your money on that stuff, you
 still owe me from last time'"
-  puts "Cricket: 'Shit, you're right. Pfffft JK. DOUBLE OR NOTHING??!!'"
+  puts "Cricket: 'Damn, you're right. Pfffft JK. DOUBLE OR NOTHING??!!'"
   puts "Type 1 to decline the gamble and collect your 100"
   puts "Type 2 to try your luck"
   if $loaded_die == 1
@@ -256,7 +257,7 @@ end
 
 def cloaked_loop
   if $drinks_ingested < 4
-    puts "\nCloaked Mystery Man 1 : 'Fuck off'"
+    puts "\nCloaked Mystery Man 1 : 'Get Lost'"
     puts "Type 1 to perform a shove"
     puts "Type 2 to go back to drinking"
     puts "Type 3 to go talk to a familiar face"
@@ -285,7 +286,7 @@ def cloaked_loop
       @@@@@@@                                 @@@@@@@
        @@@@@                                   @@@@@"""
       puts "\nThe 5 mystery men throw off their cloaks. It's the Killing Season
-Gang. You just got your ass kicked."
+Gang. You just got your butt kicked."
       puts "Your gold coins have been stolen"
       $gold_coins = 0
       $life_points -= 1
@@ -411,7 +412,7 @@ def pub_loop2
       puts "Gold coins now at #{$gold_coins}. Drinks ingested now at #{$drinks_ingested}."
       pub_loop2()
     when 5
-      puts "DAT slurred ass speech doe."
+      puts "DAT slurred speech doe."
       puts "Gold coins now at #{$gold_coins}. Drinks ingested now at #{$drinks_ingested}."
       pub_loop2()
     when 6
@@ -488,6 +489,6 @@ elsif $gold_coins == 350
   puts "Congrats you matched the high score!!!"
 else
   puts "---Think you can beat him?---"
-  puts "Gameplay Hint: Obtain a special item that increases your odds"
+  puts "Gameplay Hint: Try to obtain a special item that increases your odds"
   puts "Hack hint: It is possible to enable a hack at the first prompt of the game"
 end
